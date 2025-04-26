@@ -5,16 +5,20 @@
 
 body{
     font-family: 'Righteous', 'sans-serif';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c7cdd3;
 }
 
 .card{
     position: relative;
     width: 150px;
     height: 150px;
-    display: inline-block;
     
     transform-style: preserve-3d;
-    transition: 8s;
+    transition: 1.5s;
 }
 
 .card_back, .card_front{
@@ -66,4 +70,11 @@ body{
     border: none;
     border-radius: 10px;
     margin-top: 10px;
+}
+
+#gameBoard{
+    max-width: 700px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    gap: 20px;
 }
